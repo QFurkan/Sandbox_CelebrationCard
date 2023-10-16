@@ -2,6 +2,11 @@
 int appWidth, appHeight;
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
 float xRect2, yRect2, widthRect2, heightRect2;
+//String //All tect variables as name=value pairs
+//PFont ; //All fonts used
+//color ; //colour palette & inks
+//int sizeFont, size; //Text Varibles
+//
 //
 void setup() {
   //Print & Println
@@ -25,11 +30,31 @@ void setup() {
   widthRect2 = appWidth*1/2;
   heightRect2 = appHeight*1/2;
   //
+  //DIVs
+  rect(xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
+  rect(xRect2, yRect2, widthRect2, heightRect2);
+  //rect(); //Image, foreground, near the top
+  //rect(); //Copy and Paste this for all rect()s
+  //
+  // Text Setup
+  // Fonts from OS (Operating System)
+  //String[] fontList = PFont.list(); //Lists all fonts available on OS
+  //printArray(fontList);
+  //[fontName] = createFont("[fontSpelling]", [startingFontSize]);
+  //Verify the font exists in Processing.Java
+  // Tools / Create Font / Find Font / Do not press "OK", known bug
+  //
 } //End setup
 //
 void draw() {
-  rect(xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
-  rect(xRect2, yRect2, widthRect2, heightRect2);
+  //Drawing Text
+  //fill([colourName]); //ink
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  //size = [pixelNumberFontSize]; //integer number
+  //textFont([fontvariable], size); // states which font to use
+  //text ( [textStringName, [four rect() variables copied from DIVs]);
+  //
 } //End draw
 //
 void keyPressed() {
